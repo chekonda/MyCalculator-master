@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cal.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="back_color"></div>
+            <div class="container-fluid" id="back_color1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 mt-5 pt-5 mx-5" id="over_0">
+                <table id="tb_0" class=" bg-info border-5 border border-info shadow-lg bg-body rounded">
+                    <tr>
+                        <th colspan="4" class="text-center pt-2 text-danger ">My CALCULATOR</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4"><input readonly type="text" id="input"
+                                class="text-end form-control btn bg-info bg-opacity-10  border border-info mb-4 mt-1 text-primary">
+                        </th>
+                    </tr>
+                    <tr>
+                        <td><button onclick="clearSolve();" class="form-control btn btn-outline-danger">C</button></td>
+                        <td><button onclick="backSpace();" class="form-control btn btn-outline-danger">D</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-danger">%</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-danger">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-primary">7</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-primary">8</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-primary">9</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-danger">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-primary">4</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-primary">5</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-primary">6</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-danger">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-primary">1</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-primary">2</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-primary">3</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-danger">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="calc_square(this.innerText);"
+                                class="form-control btn btn-outline-danger">x2</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-primary">0</button></td>
+                        <td><button onclick="calc(this.innerText);"
+                                class="form-control btn btn-outline-danger">.</button></td>
+                        <td><button onclick="solve();" class="form-control btn btn-outline-success">=</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-4"></div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
